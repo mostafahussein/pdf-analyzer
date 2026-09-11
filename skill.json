@@ -1,0 +1,18 @@
+{
+  "name": "pdf-analyzer",
+  "version": "1.0.0",
+  "description": "Multi-layered malicious PDF analysis and cleaning. Static analysis, threat intelligence, and sanitization for suspicious PDFs.",
+  "author": "Mostafa Hussein <mostafa.hussein91@gmail.com>",
+  "requires": {
+    "mcp_servers": [],
+    "claude_code_version": ">=1.0.0"
+  },
+  "configuration": {
+    "user_config_path": "./config.json",
+    "template_path": "./config.template.json"
+  },
+  "commands": {
+    "primary": "/pdf-analyzer",
+    "aliases": ["/pdf-analyze", "/pdf-clean"]
+  }
+}

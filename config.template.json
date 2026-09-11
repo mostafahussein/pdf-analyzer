@@ -1,0 +1,17 @@
+{
+  "_comment": "Configuration for PDF Analyzer. Copy to config.json and customize.",
+  "_secrets_note": "API keys can be set via environment variable (VT_API_KEY), this file, or password store (pass). See CONFIG.md for setup.",
+
+  "virustotal": {
+    "api_key": "YOUR_API_KEY_HERE",
+    "_api_key_note": "Prefer environment variable or password store over this file. See CONFIG.md."
+  },
+
+  "risk_thresholds": {
+    "low": 3,
+    "medium": 6,
+    "high": 12,
+    "critical": 13,
+    "_note": "Risk score thresholds: 0-low=likely safe, low-medium=suspicious, medium-high=probable malicious, above critical=confirmed malicious. Tune against your own PDF traffic."
+  }
+}
